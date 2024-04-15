@@ -1,0 +1,51 @@
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .category-card {
+    position: relative;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .category-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .category-list {
+    list-style-type: none;
+  }
+
+  .delete-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: red;
+    color: white;
+  }
